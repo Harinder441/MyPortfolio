@@ -17,7 +17,7 @@ users = {'admin': {'password': 'pbkdf2:sha256:260000$DQS0DPTWGn0eHkvK$82e919a0a5
 app = Flask(__name__)
 Bootstrap(app)
 app.secret_key = os.environ.get("APP_SECRET_KEY")
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///portfolio.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URI")
 db.init_app(app)
 
 login_manager = LoginManager()

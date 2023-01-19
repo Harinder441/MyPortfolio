@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{%import "bootstrap/wtf.html" as wtf %}
+{% block  body %}
+{{super()}}
+<section class="section-dark text-center py-4 mt-5">
+    <h1 class="section-heading">Update {{model_name}} </h1>
+    {{wtf.quick_form(form,action=url_for('edit',model_name=model_name, model_id = id_)) }}
+</section>
+
+{% endblock%}

@@ -1,0 +1,462 @@
+/* varibles */
+:root {
+    --ywhite: #F3EFE0;
+    --blue: #22A39F;
+    --blued: #01716d;
+    --grey: #434242;
+    --black: #222222;
+
+}
+
+/* for all */
+body {
+    color: var(--black);
+}
+
+/* common to all */
+.section-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section-subheading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+
+.section-dark {
+    color: white;
+    background-color: var(--black);
+}
+
+.section-light {
+    color: var(--black);
+    background-color: var(--ywhite);
+}
+
+.my-btn {
+
+    color: var(--blue) !important;
+
+}
+
+.my-btn:hover {
+    background-color: var(--blue) !important;
+    border-color: var(--blue) !important;
+    color: var(--ywhite) !important;
+
+}
+
+
+/* flash massages */
+.flash-message{
+color:var(--blue);
+font-family:monospace;
+
+}
+
+
+/* nav bar start */
+.navbar{
+    box-shadow: 1px 1px 8px white;
+}
+.navbar-brand {
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px white;
+
+}
+
+.nav-item {
+    text-align: center;
+    color: var(--grey) !important;
+}
+ /* my blogs butto */
+.navbar .sp-link {
+    color: var(--blue) !important;
+}
+
+.navbar .sp-link:hover {
+    color: var(--blued) !important;
+}
+
+.navbar-toggler:hover {
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+/* animation for toggler */
+@keyframes shaker {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    40% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    60% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    80% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    100% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+}
+
+.shake {
+    animation: shaker 0.5s;
+    animation-iteration-count: 1;
+}
+
+
+/* nav bar end */
+
+
+
+/* for main section */
+
+.main-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.main-section img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    border: 6px solid #fff;
+    box-shadow: 2px 2px 10px #ccc;
+    border-radius: 50%;
+}
+
+.main-section h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-section h2 {
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+.main-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.main-section a.btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.main-btn-left {
+    background-color: var(--blue);
+    border-color: var(--blue);
+
+}
+
+.main-btn-left:hover,
+.main-btn-left:focus {
+    background-color: var(--blued) !important;
+    border-color: var(--blued) !important;
+
+}
+
+.main-btn-right {
+    background-color: var(--grey);
+    border-color: var(--grey);
+
+}
+
+.main-btn-right:hover {
+    background-color: var(--black);
+    border-color: var(--black);
+
+}
+
+/* Fade-in animation */
+.main-section {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Bouncing animation */
+.main-section img {
+    animation: bounce 2s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.main-section h1,
+.main-section h2,
+.main-section p {
+    animation: scaleup 2s;
+    opacity: 0;
+    transform: scale(0.8);
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaleup {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* end of main section */
+
+/* project section */
+#projects {
+    background-color: var(--black);
+    color: white;
+
+}
+
+
+#projects .card {
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+
+#projects .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#projects .card-body {
+    padding: 20px;
+    background-color: var(--ywhite);
+}
+
+#projects .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+#projects .card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+.github-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--blue);
+    border-color: var(--blue);
+    visibility: hidden;
+}
+
+.github-link:hover {
+    background-color: var(--black);
+    color: #fff;
+    text-decoration: none;
+    border-color: var(--blue);
+}
+
+.card:hover .github-link {
+    visibility: visible;
+}
+
+/* Style the Show All button */
+.show-all-button {
+    background-color: var(--blued);
+    border-color: var(--blued);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    float: right;
+    margin-right:2rem;
+    margin-bottom:2rem;
+
+}
+
+.show-all-button:hover {
+    background-color: var(--blue);
+    color: var(--ywhite);
+    border-color: var(--blue);
+    text-decoration: none;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    .github-link {
+        visibility: visible;
+    }
+}
+
+/* project section end */
+
+
+/* skills-section-start */
+#skillsAccordion .card-header {
+    background-color: white;
+    color: var(--black);
+}
+
+#skillsAccordion .card-body {
+    background-color: var(--ywhite);
+    color: var(--grey);
+
+}
+
+.skill-btn {
+    text-align: left;
+    padding: 10px;
+    color: var(--black);
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+    transition: all ease-in-out 0.3s;
+    font-size: 1.2rem;
+    font-family: monospace;
+
+}
+
+#skillsAccordion .card-header:hover .skill-btn{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.skill-badge {
+    float: right;
+    color: var(--black);
+    opacity: 0.5;
+    text-align: center;
+
+}
+
+@media (min-width: 1000px) {
+    #skillsAccordion{
+        padding: 0 10%;
+        
+    }
+}
+
+
+/* skills-section-end */
+
+/* contact me :start */
+
+
+
+.form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form label {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form input,
+.form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    margin-bottom: 20px;
+    background-color: var(--ywhite);
+}
+
+.form input[type="submit"] {
+    background-color: var(--blue);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background: var(--grey);
+}
+
+@media (max-width: 768px) {
+   .form {
+    width: 80%;
+}
+}
+/* contact me :end */
+
+/* footer start */
+#footer a {
+    color: var(--blue);
+}
+
+/* footer end */

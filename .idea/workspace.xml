@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2bdcb56-e2ab-4116-b44e-68e94969829c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Blogs.py/auto_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 60/mainb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day 60/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask-secrets/myForm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask-secrets/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask-secrets/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EditForms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserDatabase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indexCopy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instance/portfolio.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/profile_picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/profile_trsp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/script/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/projects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProPlus2021Retail.img" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Starting+Files+-+cafe-api-start/project.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Turtle_Crossing/project.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Turtle_race/project.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Workout Tracker/project.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../coffee-and-wifi/add_cafe_form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flash-card-project-start/project.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../library-start/all_books.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../library-start/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../library-start/database2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../library-start/instance/new-books-collection.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../library-start/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-project-start/movieApi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-project-start/movieForm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock-news/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ Billboard Hot 100/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ Billboard Hot 100/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ Billboard Hot 100/token.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ Billboard Hot 100/token.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blogs.py/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Blogs.py/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Blogs.py/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Blogs.py/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 56/templates/pw/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 56/templates/pw/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Turtle_race/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Turtle_race/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Workout Tracker/nutrition_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Workout Tracker/nutrition_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flash-card-project-start/data/french_words.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../flash-card-project-start/data/french_words.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../from invent/hangman2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../from invent/hangman2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../password-manager-start/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../password-manager-start/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../password-manager-start/passwords.json" beforeDir="false" afterPath="$PROJECT_DIR$/../password-manager-start/passwords.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../password-manager-start/passwords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../password-manager-start/passwords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock-news/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-news/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2KUS61Cx1UvxPjpxbcHBITU8V57" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/raj/PycharmProjects/pythonProject/MyPortfolio"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2bdcb56-e2ab-4116-b44e-68e94969829c" name="Changes" comment="" />
+      <created>1674027489612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674027489612</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

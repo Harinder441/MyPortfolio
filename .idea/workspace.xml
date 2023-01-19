@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2bdcb56-e2ab-4116-b44e-68e94969829c" name="Changes" comment="removing instance">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="f2bdcb56-e2ab-4116-b44e-68e94969829c" name="Changes" comment="adding more reqs">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674141845434</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding more reqs">
+      <created>1674143711655</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674143711655</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="seting env variables" />
     <MESSAGE value="removing instance" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing instance" />
+    <MESSAGE value="adding more reqs" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding more reqs" />
   </component>
 </project>

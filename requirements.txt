@@ -1,0 +1,12 @@
+Flask-Bootstrap==3.3.7.1
+Flask-CKEditor==0.4.6
+Flask-SQLAlchemy==3.0.2
+Flask-WTF==1.1.0
+Flask==2.2.2
+Jinja2==3.1.2
+SQLAlchemy==1.4.46
+Werkzeug==2.2.2
+WTForms==3.0.1
+Flask-Login
+email_validator
+python-dotenv

@@ -6,6 +6,9 @@ from database import db, create_all, Bio, Education, LicenseCertification, Proje
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 from notifier import send_mail,msg_format
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 users = {'admin': {'password': 'pbkdf2:sha256:260000$DQS0DPTWGn0eHkvK$82e919a0a59d1c5f6f1fa4d5acbb7f2b25d7161635ad07dcfc09fb59376af692',
                    'active': True}
@@ -13,7 +16,7 @@ users = {'admin': {'password': 'pbkdf2:sha256:260000$DQS0DPTWGn0eHkvK$82e919a0a5
 
 app = Flask(__name__)
 Bootstrap(app)
-app.secret_key = "a87b1788ce5061f821a33ae6"
+app.secret_key = os.environ.get("APP_SECRET_KEY")
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///portfolio.db"
 db.init_app(app)
 
@@ -64,7 +67,7 @@ def user_data():
     db.session.commit()
     msg = msg_format(from_p="My Portfolio",
                      to="me",subject="New massage from Portfolio.", body=f"{form['email']} \n{form['massage']}")
-    send_mail(to_ad="harindersingh2107@gmail.com",massage=msg)
+    send_mail(to_ad= os.environ.get("TO_EMAIL"),massage=msg)
     flash(message="Received your Massage. Thank you!", category="information")
     return redirect(app.url_for('home'))
 # --------------------------------------login route setup---------

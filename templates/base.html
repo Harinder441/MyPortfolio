@@ -32,6 +32,7 @@
 
         <div class="collapse navbar-collapse " id="navbarNav">
           <ul class="navbar-nav ms-auto">
+              {% block navbar_items%}
             <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
@@ -51,6 +52,7 @@
               <a class="nav-link sp-link" href="{{url_for('logout')}}">Logout</a>
             </li>
               {%endif%}
+              {% endblock %}
           </ul>
         </div>
       </nav>

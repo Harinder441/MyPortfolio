@@ -11,21 +11,7 @@
 
 {% endblock %}
 
-{% block navbar %}
-<!-- navbar- start -->
-    <nav class="navbar navbar-expand-md  navbar-light  px-2 section-light fixed-top">
-        <!-- <div class="nav-left"> -->
-        <a class="navbar-brand" href="{{url_for('home')}}">
-          <img src="{{url_for('static',filename='images/profile_trsp.png')}}" width="40" height="40" class="d-inline-block align-top" alt="Logo">
-
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+{% block navbar_items %}
             <li class="nav-item">
                 <a class="nav-link" href="#cv-projects">Projects</a>
               </li>
@@ -45,12 +31,10 @@
               <a class="nav-link sp-link" href="{{url_for('logout')}}">Logout</a>
             </li>
               {%endif%}
-          </ul>
-        </div>
-      </nav>
 
-    <!-- navbar- end -->
 {% endblock %}
+
+
 
 {% block  body %}
 {{super()}}
@@ -73,6 +57,7 @@
                 </p>
                 <p><a href="https://github.com/Harinder441" class="social-link" target="_blank">github.com/Harinder441</a></p>
                 <p><a href="mailto:harindersingh2107@gmail.com" class="social-link">harindersingh2107@gmail.com</a></p>
+<!--                <p><a href="" class="social-link">+918901116612</a></p>-->
             </div>
 
 
@@ -370,8 +355,6 @@
 </footer>
 
 <!-- -------------------FOOTER END ----------- -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+
 
 {% endblock %}

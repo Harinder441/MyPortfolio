@@ -16,13 +16,6 @@ setTimeout(function(){
 }, 5000);
 
 
-// confirm delete
-//$('.delete-link').on('click', function(e){
-//    if (!confirm("Are you sure you want to delete this item?")) {
-//        e.preventDefault();
-//    }
-//});
-
 window.onload = function() {
     var deleteLinks = document.getElementsByClassName("delete-link");
     for (var i = 0; i < deleteLinks.length; i++) {

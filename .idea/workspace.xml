@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2bdcb56-e2ab-4116-b44e-68e94969829c" name="Changes" comment="added cv and change styles updated link">
+    <list default="true" id="f2bdcb56-e2ab-4116-b44e-68e94969829c" name="Changes" comment="cv pdf change,email work,css changes">
+      <change afterPath="$PROJECT_DIR$/templates/msg.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/notifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/script/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/script/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +19,7 @@
       <list>
         <option value="Freeze Requirements File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -38,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/raj/OneDrive/Documents/MyPortfolio/static/files",
@@ -55,7 +55,7 @@
       <recent name="C:\Users\raj\OneDrive\Documents\MyPortfolio\static\files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.notifier">
+  <component name="RunManager" selected="Python.main">
     <configuration name="auto_email" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyPortfolio" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,8 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.notifier" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.notifier" />
         <item itemvalue="Python.auto_email" />
         <item itemvalue="Python.test" />
       </list>
@@ -214,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674283652820</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cv pdf change,email work,css changes">
+      <created>1674294169814</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674294169814</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +241,7 @@
     <MESSAGE value="new database" />
     <MESSAGE value="adding more reqs" />
     <MESSAGE value="added cv and change styles updated link" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cv and change styles updated link" />
+    <MESSAGE value="cv pdf change,email work,css changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="cv pdf change,email work,css changes" />
   </component>
 </project>

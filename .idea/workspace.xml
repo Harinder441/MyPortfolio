@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2bdcb56-e2ab-4116-b44e-68e94969829c" name="Changes" comment="adding more reqs">
+      <change afterPath="$PROJECT_DIR$/static/css/cv.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/files/HarinderSingh.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cv.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexCopy.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +45,21 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/raj/PycharmProjects/pythonProject/MyPortfolio",
+    "last_opened_file_path": "C:/Users/raj/OneDrive/Documents/MyPortfolio/static/files",
     "settings.editor.selected.configurable": "configurable.group.language"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raj\OneDrive\Documents\MyPortfolio\static\files" />
+      <recent name="C:\Users\raj\OneDrive\Documents\MyPortfolio\static\css" />
+      <recent name="C:\Users\raj\OneDrive\Documents\MyPortfolio\templates" />
+      <recent name="C:\Users\raj\OneDrive\Documents\MyPortfolio" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raj\OneDrive\Documents\MyPortfolio\static\files" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyPortfolio" />
@@ -128,7 +147,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674145019760</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding more reqs">
+      <created>1674151023132</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674151023132</updated>
+    </task>
+    <task id="LOCAL-00006" summary="adding more reqs">
+      <created>1674151052250</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674151052250</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding more reqs">
+      <created>1674151063766</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674151063766</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +185,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="seting env variables" />
     <MESSAGE value="removing instance" />
+    <MESSAGE value="new database" />
     <MESSAGE value="adding more reqs" />
     <option name="LAST_COMMIT_MESSAGE" value="adding more reqs" />
   </component>

@@ -1,0 +1,85 @@
+:root {
+    --white:#F3EFE0;
+    --blue: #22A39F;
+    --grey:#434242;
+    --black:#222222;
+   
+}
+
+/* Styling for cv  */
+
+p{
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+/* common properties*/
+body{
+    margin: 0 10%;
+    background-color: var(--white);
+    font-family: 'Nunito Sans', sans-serif;
+    
+    color: var(--grey);
+}
+section{
+    margin-top: 1rem;
+
+}
+.cv-section-heading{
+    font-size: 1.4rem;
+    color:var(--black) ;
+    font-weight: 700;
+
+    
+}
+
+/* header  */
+#cv-header{
+margin-top: 4rem;
+}
+.social-link{
+
+    font-size: 0.8rem;
+    color: var(--grey);
+    padding: 0;
+    margin-top: 0;
+}
+.header-name{
+    font-size: 2.8rem;
+    color:var(--black) ;
+    font-weight: 700;
+}
+.header-desc{
+    font-size: 1.3rem;
+}
+/* header end */
+/* section items start */
+.exp-time,.edu-time{
+ font-size: 0.9rem;
+ float: right;
+}
+.exp-company,.edu-course,.proj-title{
+    font-size: 1.3rem;
+
+   }
+.exp-role,.edu-company,.proj-tech{
+font-size: 1.2rem;
+}  
+.tech-name, .awards-desc{
+    font-size: 1.1rem;
+}
+.download-btn{
+
+    color: var(--white) !important;
+    background-color: var(--blue) !important;
+}
+
+.download-btn:hover {
+    background-color: var(--grey) !important;
+    color: var(--ywhite) !important;
+
+}
+/* section items end*/
+

@@ -1,0 +1,377 @@
+{% extends "base.html" %}
+{%import "bootstrap/wtf.html" as wtf %}
+{% block  head %}
+{{super()}}
+<!--  Fonts From Google-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+<!--  Style sheets-->
+<link href="static/css/cv.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block navbar %}
+<!-- navbar- start -->
+    <nav class="navbar navbar-expand-md  navbar-light  px-2 section-light fixed-top">
+        <!-- <div class="nav-left"> -->
+        <a class="navbar-brand" href="{{url_for('home')}}">
+          <img src="{{url_for('static',filename='images/profile_trsp.png')}}" width="40" height="40" class="d-inline-block align-top" alt="Logo">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#cv-projects">Projects</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cv-techSkills">Skills</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#cv-experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link sp-link" href="{{url_for('download')}}">Download</a>
+              </li>
+              {% if current_user.is_authenticated %}
+              <li class="nav-item">
+              <a class="nav-link sp-link" href="{{url_for('logout')}}">Logout</a>
+            </li>
+              {%endif%}
+          </ul>
+        </div>
+      </nav>
+
+    <!-- navbar- end -->
+{% endblock %}
+
+{% block  body %}
+{{super()}}
+<!-- -----------------Header---------- -->
+<header id="cv-header" >
+    <div class="row py-4">
+
+
+        <div class="col-md-6 text-md-start text-sm-center">
+            <h1 class="header-name">Harinder Singh</h1>
+            <p class="header-desc">Full Stack Web-Developer </p>
+        </div>
+        <div class="col-md-6">
+
+
+            <div class="header-links float-md-end ">
+                <p><a href="https://harindersinghportfolio.onrender.com/" class="social-link" target="_blank">harindersinghportfolio.onrender.com</a>
+                </p>
+                <p><a href="https://www.linkedin.com/in/harindersingh441" class="social-link" target="_blank">www.linkedin.com/in/harindersingh441</a>
+                </p>
+                <p><a href="https://github.com/Harinder441" class="social-link" target="_blank">github.com/Harinder441</a></p>
+                <p><a href="mailto:harindersingh2107@gmail.com" class="social-link">harindersingh2107@gmail.com</a></p>
+            </div>
+
+
+        </div>
+
+    </div>
+</header>
+<!-- ------------------ Header End---------------- -->
+
+<!-- ---------------- Exp START ----------------- -->
+<section id="cv-experience">
+    <hr class="d-sm-none  d-lg-block ">
+    <div class="row">
+
+        <div class="col-lg-3">
+            <h3 class="cv-section-heading">EXPERIENCES</h3>
+            <hr class="d-lg-none ">
+        </div>
+        <div class="col-lg-9">
+            <div class="experience-item mb-4">
+                <div class="experience-item-heading">
+                    <div class="row">
+                        <div class="col-8 ">
+                            <p class="exp-company"><strong> IIT Dhanbad</strong></p>
+                        </div>
+                        <div class="col-4">
+                            <p class="exp-time"><em>July 2022-Aug 2022</em></p>
+                        </div>
+                    </div>
+                    <p class="exp-role">Research Intern</p>
+                </div>
+
+                <div class="experience-item-discription mb-0">
+                    <ul>
+                        <li>Implemented portfolio optimization models using SVM and fuzzy SVM.</li>
+                        <li>Experience in implementing optimization models using Python libraries such as gurobi,numpy,
+                            scikit-learn, and pandas.
+                        </li>
+                        <li>Conducted independent research and development during the internship, resulting in improved
+                            portfolio performance.
+                        </li>
+                        <li>Proven ability in mathematical and statistical concepts applied to portfolio optimization
+                        </li>
+                        <li class="exp-skill">Python | Machine Learning | Optimization</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="experience-item mb-4">
+                <div class="experience-item-heading">
+                    <div class="row">
+                        <div class="col-8 ">
+                            <p class="exp-company"><strong> IISER Trivandrum</strong></p>
+                        </div>
+                        <div class="col-4">
+                            <p class="exp-time"><em>May 2022- Jun 2022</em></p>
+                        </div>
+                    </div>
+                    <p class="exp-role">Student Intern - MTTS L-1</p>
+                </div>
+
+                <div class="experience-item-discription">
+                    <ul>
+                        <li>Developed strong problem-solving skills and a knack for creative thinking during an
+                            internship in mathematics.
+                        </li>
+                        <li>Gained experience in working effectively in a team and presenting complex mathematical
+                            concepts
+                        </li>
+                        <li>Developed strong organizational and planning skills through coordinating and leading team
+                            trips
+                        </li>
+                        <li>Internship in mathematics provided a strong foundation for analytical and logical
+                            thinking.
+                        </li>
+                        <li class="exp-skill"> Problem Solving | Creative thinking | Presentation | Team Work</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- --------- EXP END----------------- -->
+
+<!-- ---------PROJECT START----------------- -->
+<section id="cv-projects">
+    <hr class="d-sm-none  d-lg-block ">
+    <div class="row">
+
+        <div class="col-lg-3">
+            <h3 class="cv-section-heading">PROJECTS</h3>
+            <hr class="d-lg-none ">
+        </div>
+        <div class="col-lg-9">
+            <div class="projects-item mb-4">
+                <div class="projects-item-heading">
+                    <div class="row">
+                        <div class="col-12 ">
+                            <p class="proj-title"><strong>My Portfolio Website</strong></p>
+                        </div>
+
+                    </div>
+                    <p class="proj-tech">Python | Flask | jinja2 | Git | Bootsrap 5 | SQL</p>
+                </div>
+
+                <div class="projects-item-discription">
+                    <li>Developed and deployed a portfolio website using Flask, Python and Git, fully responsive and
+                        dynamic.
+                    </li>
+                    <li>Implemented an authentication method to allow for editing and updating of website content.</li>
+                    <li>Experience in deploying web applications using Git, Render.com and ElephantSQL.</li>
+                </div>
+            </div>
+            <div class="projects-item mb-4">
+                <div class="projects-item-heading">
+                    <div class="row">
+                        <div class="col-12 ">
+                            <p class="proj-title"><strong>Math Num-Methods Toolkit</strong></p>
+                        </div>
+
+                    </div>
+                    <p class="proj-tech"> Python| Tkinter | OPP</p>
+                </div>
+
+                <div class="projects-item-discription">
+                    <li>Developed a user-friendly GUI project using Tkinter, to assist students and researchers in
+                        solving numerical methods problems
+                    </li>
+                    <li>Included a range of tools in the project, such as a method comparator, iteration result
+                        displayer, and an inbuilt math keyboard for ease of use.
+                    </li>
+                    <li>Proven ability to develop practical and useful software for a specific target audience and solve
+                        real-world problems.
+                    </li>
+                </div>
+            </div>
+            <div class="projects-item mb-4">
+                <div class="projects-item-heading">
+                    <div class="row">
+                        <div class="col-12 ">
+                            <p class="proj-title"><strong>Stack Overflow Clone</strong></p>
+                        </div>
+
+                    </div>
+                    <p class="proj-tech"> Javascript | React Js | Node js | MongoDB</p>
+                </div>
+
+                <div class="projects-item-discription">
+                    <li>Developed a Stack Overflow clone project using the MERN stack, with features such as user
+                        authentication, question posting and voting
+                    </li>
+                    <li>Expertised using React.js for building dynamic user interfaces and integrating with a backend
+                        API.
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ---------PROJECTS END----------------- -->
+
+<!-- ---------Tech Skill START----------------- -->
+
+<section id="cv-techSkills">
+    <hr class="d-sm-none  d-lg-block ">
+    <div class="row">
+
+        <div class="col-lg-3">
+            <h3 class="cv-section-heading">TECHNICAL SKILLS</h3>
+            <hr class="d-lg-none ">
+        </div>
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">Python</p>
+                </div>
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">JavaScript</p>
+                </div>
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">HTML/CSS</p>
+                </div>
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">C/C++</p>
+                </div>
+
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">FLask</p>
+                </div>
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">React Js</p>
+                </div>
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">Bootsrap 5</p>
+                </div>
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">SQL</p>
+                </div>
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">Tkinter</p>
+                </div>
+
+
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">Mongodb</p>
+                </div>
+                <div class="techSkills-item mb-2 col-3">
+                    <p class="tech-name">Git</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ---------Tech Skill END  ----------------- -->
+<!-- ------------------ Education start---------------- -->
+<section id="cv-education">
+    <hr class="d-sm-none  d-lg-block ">
+    <div class="row">
+
+        <div class="col-lg-3">
+            <h3 class="cv-section-heading">EDUCATION</h3>
+            <hr class="d-lg-none ">
+        </div>
+        <div class="col-lg-9">
+            <div class="education-item mb-4">
+                <div class="education-item-heading">
+                    <div class="row">
+                        <div class="col-8 ">
+                            <p class="edu-course"><strong> BSc(Hons)-Mathematics</strong></p>
+                        </div>
+                        <div class="col-4">
+                            <p class="edu-time"><em>July 2019 - Dec 2022</em></p>
+                        </div>
+                    </div>
+                    <p class="edu-company">Akal University, Punjab</p>
+                </div>
+
+                <div class="education-item-discription">
+                    <ul>
+                        <li>SGPA 9.0</li>
+                        <li>Courses in C, C++ and Python</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ---------------- EDU END ----------------- -->
+<!-- ---------HONORS START----------------- -->
+
+<section id="cv-awards">
+    <hr class="d-sm-none  d-lg-block ">
+    <div class="row">
+
+        <div class="col-lg-3">
+            <h3 class="cv-section-heading">HONORS & AWARDS</h3>
+            <hr class="d-lg-none ">
+        </div>
+        <div class="col-lg-9">
+            <div class="awards-item mb-2">
+                <p class="awards-desc">
+                    Secured <strong>1st Rank</strong> in <strong>Programming war</strong>, Technophilia 2022, Aka
+                    University
+                </p>
+            </div>
+
+            <div class="awards-item mb-2">
+                <p class="awards-desc">
+                    Secured <strong>1st Rank</strong> in <strong>Go Logical</strong>, National Science day 2022 - Akal
+                    University </p>
+            </div>
+
+            <div class="awards-item mb-2">
+                <p class="awards-desc">
+                    Solved 57% <strong>DSA Problems</strong> using C language at <strong>coder.MysirG.com</strong>
+                </p>
+            </div>
+
+            <div class="awards-item mb-2">
+                <p class="awards-desc">
+                    Got certification for <strong>C, C++ and Python</strong> Programming Language from <strong>Bombay
+                    IIT.</strong>
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- ---------HONORS END----------------- -->
+
+<!-- -------------------FOOTER START ----------- -->
+<footer id="cv-footer" class="text-center py-3">
+                <a class="btn download-btn"  role="button" href="{{url_for('download')}}">Download</a>
+</footer>
+
+<!-- -------------------FOOTER END ----------- -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+{% endblock %}

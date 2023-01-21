@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request, flash
+from flask import Flask, render_template, redirect, request, flash,send_from_directory
 from flask_bootstrap import Bootstrap
 from forms import UserForm,LoginForm
 from EditForms import *
@@ -27,7 +27,6 @@ with app.app_context():
     # create_all()
     # sampledata()
     pass
-
 
 class User(UserMixin):
     pass
@@ -58,7 +57,12 @@ def projects():
     all_projects = Project.query.order_by(Project.ranking.asc()).all()
     return render_template('projects.html', projects=all_projects)
 
-
+@app.route("/cv")
+def cv():
+    return render_template("cv.html")
+@app.route('/download')
+def download():
+    return send_from_directory('static', path="files/HarinderSingh.pdf")
 @app.route("/dataHandle", methods=["GET", "POST"])
 def user_data():
     form = request.form

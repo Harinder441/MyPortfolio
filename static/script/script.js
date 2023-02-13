@@ -26,3 +26,22 @@ window.onload = function() {
         });
     }
 };
+
+//Print preview
+function printpreview(){
+    var navbar = document.getElementsByClassName("navbar")[0];
+    var body = document.getElementsByTagName('body')[0]
+    var header = document.getElementById("cv-header")
+    var footer = document.getElementById("cv-footer")
+    navbar.style.display = "none";
+    footer.style.display = "none";
+    body.style.backgroundColor = "white";
+    header.style.marginTop = "1rem";
+
+    window.print();
+    navbar.style.display = "flex";
+    footer.style.display = "block";
+    body.style.backgroundColor = "var(--white)";
+    header.style.marginTop = "4rem";
+
+}

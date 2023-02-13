@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {%import "bootstrap/wtf.html" as wtf %}
+
+
 {% block  body %}
 
 {{super()}}
@@ -61,7 +63,7 @@
                {%endif%}
               </h5>
 
-              <p class="card-text">{{project.description}}</p>
+              <p class="card-text">{{project.description[:160]}}...</p>
               <a href="{{project.github_link}}" class="btn btn-primary github-link" target="_blank">View on GitHub</a>
             </div>
           </div>
@@ -91,21 +93,21 @@
     </h2>
     <div class="accordion" id="skillsAccordion">
         {%for skill in skills%}
-        <div class="card">
-            <div class="card-header" id="headingOne">
+        <div class="accordion-item">
+            <div class="accordion-header skill-header" id="heading{{skill.id}}">
                 <h2 class="mb-0">
-                    <button class="btn btn-link skill-btn" type="button" data-bs-toggle="collapse" data-bs-target="#skill{{skill.id}}" aria-expanded="true" aria-controls="{{skill.title}}">
+                    <button class="accordion-button {{'collapsed' if skills.index(skill)}} skill-btn" type="button" data-bs-toggle="collapse" data-bs-target="#skill{{skill.id}}" aria-expanded="{{'false' if skills.index(skill) else 'true'}}" aria-controls="skill{{skill.id}}">
                         {{skill.title}}
                         {% if current_user.is_authenticated %}
                         <a href="{{url_for('edit',model_name='skill', model_id = skill.id)}}" class="my-btn "><i class="fa-solid fa-pen-to-square"></i></a>
                       <a  href="{{url_for('delete',model_name='skill', model_id = skill.id)}}" class="delete-link my-btn"><i class="fa-solid fa-trash"></i></a>
                         {% endif%}
+                        <span class="badge  skill-badge">{{skill.proficiency}}</span>
                     </button>
-                    <span class="badge  skill-badge">{{skill.proficiency}}</span>
                 </h2>
             </div>
-            <div id="skill{{skill.id}}" class="collapse {{'show' if skills.index(skill)==0}}" aria-labelledby="headingOne" data-parent="#skillsAccordion">
-                <div class="card-body">
+            <div id="skill{{skill.id}}" class="accordion-collapse collapse {{'show' if skills.index(skill)==0}}" aria-labelledby="heading{{skill.id}}" data-bs-parent="#skillsAccordion">
+                <div class="accordion-body skill-body">
                     <p>{{skill.description}}</p>
                 </div>
             </div>

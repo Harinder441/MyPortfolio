@@ -34,7 +34,9 @@ section{
 
     
 }
-
+hr{
+    opacity: 0.75;
+}
 /* header  */
 #cv-header{
 margin-top: 4rem;
@@ -70,13 +72,13 @@ font-size: 1.2rem;
 .tech-name, .awards-desc{
     font-size: 1.1rem;
 }
-.download-btn{
+.footer-btn{
 
     color: var(--white) !important;
     background-color: var(--blue) !important;
 }
 
-.download-btn:hover {
+.footer-btn:hover {
     background-color: var(--grey) !important;
     color: var(--ywhite) !important;
 

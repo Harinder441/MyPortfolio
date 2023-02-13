@@ -4,7 +4,7 @@ from wtforms import StringField, TextAreaField, validators,SubmitField,PasswordF
 
 class UserForm(FlaskForm):
     email = StringField('Email', [validators.DataRequired(), validators.Email()])
-    massage = TextAreaField('Massage', [validators.DataRequired()],render_kw={'rows':5})
+    massage = TextAreaField('Message', [validators.DataRequired()],render_kw={'rows':5})
     submit = SubmitField('Submit')
 
 

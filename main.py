@@ -81,10 +81,10 @@ def user_data():
     db.session.add(new_msg)
     db.session.commit()
     # msg = msg_format(from_p="My Portfolio",
-    #                  to="me", subject="New massage from Portfolio.", body=f"{form['email']} \n{form['massage']}")
+    #                  to="me", subject="New message from Portfolio.", body=f"{form['email']} \n{form['massage']}")
     # Email sending not working with render
     # send_mail(to_ad= os.environ.get("TO_EMAIL"),massage=msg)
-    flash(message="Received your Massage. Thank you!", category="information")
+    flash(message="Received your Message. Thank you!", category="information")
     return redirect(app.url_for('home'))
 
 

@@ -1,0 +1,375 @@
+/* varibles */
+:root {
+    --ywhite:#F3EFE0;
+    --blue: #22A39F;
+    --blued: #01716d;
+    --grey:#434242;
+    --black:#222222;
+   
+}
+/* for all */
+body{
+    color: var(--black);
+}
+
+/* common to all */
+.section-heading{
+    text-align: center;
+}
+.section-subheading{
+    text-align: center;
+}
+
+.section-dark{
+    color: white;
+    background-color: var(--black);
+}
+.section-light{
+    color:var(--black);
+    background-color: var(--ywhite);
+}
+.my-btn{
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--ywhite)!important;
+    border-radius: 30px;
+}
+.my-btn:hover{
+    background-color: var(--blued) !important;
+    border-color: var(--blued)!important;
+  
+
+}
+/* nav bar start */
+.navbar-brand{
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px white;
+    
+}
+.nav-item{
+text-align: center;
+color: var(--grey)!important;
+}
+.navbar .sp-link{
+color: var(--blue)!important;
+}
+.navbar .sp-link:hover{
+    color: var(--blued)!important;
+    }
+
+/* nav bar end */
+
+
+
+ /* for main section */
+
+.main-section {
+    background-color: var(--ywhite);
+    padding: 100px 0;
+    position: relative;
+}
+
+.main-section img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+    border: 6px solid #fff;
+    box-shadow: 2px 2px 10px #ccc;
+    border-radius: 50%;
+}
+
+.main-section h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-section h2 {
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: var(--grey);
+}
+
+.main-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.main-section a.btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.main-btn-left{
+    background-color: var(--blue);
+    border-color: var(--blue);
+
+}
+.main-btn-left:hover,.main-btn-left:focus{
+    background-color: var(--blued) !important;
+    border-color: var(--blued)!important;
+
+}
+
+.main-btn-right{
+    background-color: var(--grey); 
+    border-color: var(--grey);
+
+}
+
+.main-btn-right:hover{
+    background-color: var(--black); 
+    border-color: var(--black);
+
+}
+/* Fade-in animation */
+.main-section {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Bouncing animation */
+.main-section img{
+    animation: bounce 2s;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-20px); }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.main-section h1, .main-section h2, .main-section p {
+    animation: scaleup 2s;
+    opacity: 0;
+    transform: scale(0.8);
+    animation-fill-mode: forwards;
+}
+@keyframes scaleup {
+    from { transform: scale(0.5); opacity: 0; }
+    to  { transform: scale(1); opacity: 1; }
+}
+
+/* end of main section */
+
+/* project section */
+#projects{
+    background-color: var(--black);
+    color: white;
+
+}
+.section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section-subheading {
+    font-size: 18px;
+    font-weight: 400;
+    color: #777;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.github-link {
+    visibility: hidden;
+}
+
+
+.card:hover .github-link {
+    visibility: visible;
+}
+
+#projects .card {
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+
+#projects .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#projects .card-body {
+    padding: 20px;
+    background-color: var(--ywhite);
+}
+#projects .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+#projects .card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+.github-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.github-link:hover {
+    background-color: var(--black);
+    color: #fff;
+    text-decoration: none;
+    border-color: var(--blue);
+}
+
+/* Style the Show All button */
+.show-all-button {
+    background-color: var(--blued);
+    border-color:  var(--blued);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    float: right;
+
+}
+.show-all-button:hover {
+    background-color: var(--blue);
+    color: var(--ywhite);
+    border-color: var(--blue);
+    text-decoration: none;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+    
+}
+
+/* project section end */
+
+
+/* skills-section-start */
+#skills{
+    background-color: var(--ywhite);
+        color: var(--black);
+
+}
+#skills .section-heading{
+    text-align: center;
+}
+#skillsAccordion .card{
+   
+}
+#skillsAccordion .card-header{
+background-color: white;
+color: var(--black) ;
+}
+
+#skillsAccordion .card-body{
+    background-color: var(--ywhite);
+    color: var(--grey);
+    
+    } 
+.skill-btn{
+    text-align: left;
+
+    padding: 10px;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+    transition: all ease-in-out 0.3s;
+    /* background-color: #01716d; */
+}
+
+.skill-btn:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.skill-badge{
+ /* float: right; */
+ color: var(--ywhite);
+text-align: left;
+
+}
+
+
+/* skills-section-end */
+
+/* contact me :start */
+
+
+.section-subheading{
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--ywhite);
+    margin-bottom: 50px;
+}
+
+form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+form label{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+form input, form textarea{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: var(--ywhite);
+}
+
+form button[type="submit"]{
+    background-color: var(--blue);
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+form button[type="submit"]:hover{
+    background: var(--grey);
+}
+
+/* contact me :end */
+/* footer start */
+#footer a{
+    color: var(--blue);
+}
+/* footer end */
